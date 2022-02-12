@@ -31,4 +31,11 @@ public class Empregado{
     public String getNome() {
         return nome;
     }
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    public int getTipo() {
+        return tipo;
+    }
+    
 }
