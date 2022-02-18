@@ -1,3 +1,8 @@
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+//Varargs ESTUDAR/PESQUISAR
 public class TesteEmpregado {
     public static void main(String[] args) {
         Empregado e1 = new Empregado();
@@ -14,9 +19,10 @@ public class TesteEmpregado {
         e3.setSalario(1500);
         e3.setBonus(350);
 
-        System.out.println("Empregado e1 recebe :" + e1.calcularSalario());
-        System.out.println("Empregado e1 recebe :" + e2.calcularSalario());
-        System.out.println("Empregado e1 recebe :" + e3.calcularSalario());
+        List <Empregado> emps= Arrays.asList(e1,e2,e3);
+        for (Empregado e:emps) {
+            System.out.println(e.calcularSalario());
+        }
         
     }
 }
